@@ -17,17 +17,29 @@ body {
 }
 .App{
   height: 100vh;
+ 
   transition: all 0.5s ease;
 }
 .active-App{
-  background:rgb(241, 144, 144);
-  
+  background:rgb(240, 180, 180);
+  margin-left: 20%;
  
 }
+
+
 h3,h4{
   font-weight: 400;
   color:rgb(110, 109, 109);
 }
+
+@media screen and (min-width:1580px){
+  .active-App{
+    background:rgb(233, 179, 179);
+    margin-left: 10%;
+   
+  }
+}
+
 @import "./song";
 @import "./player";
 @import "./library";

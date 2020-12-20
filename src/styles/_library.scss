@@ -30,7 +30,12 @@
     align-items: center;
     cursor: pointer;
     padding: 1rem 2rem 1rem 2rem;
-    img{
+    transition: background .5s  ease;   
+    -webkit-transition: background .5s  ease;   
+    -moz-transition: background .5s  ease;  
+    -ms-transition: background .5s  ease;   
+    -o-transition: background .5s  ease;   
+img{
         width: 30%;
     }
     &:hover {
@@ -84,4 +89,10 @@
     -ms-transform: translateX(0%);
     -o-transform: translateX(0%);
     opacity: 1;
+}
+
+@media screen and (max-width:768px){
+    .library{
+        width: 100%;
+    }
 }
