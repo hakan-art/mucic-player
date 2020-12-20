@@ -6,7 +6,7 @@ import Library from "./components/Library";
 //Import Styles
 import "./styles/app.scss";
 // Import Util
-import data from "./util";
+import data from "./data";
 import Nav from "./components/Nav";
 
 function App() {
@@ -40,6 +40,7 @@ function App() {
         songInfo={songInfo}
         songs={songs}
         setCurrentSong={setCurrentSong}
+        setSongs={setSongs}
       />
       <Library songs={songs} setCurrentSong={setCurrentSong} audioRef={audioRef} isPlaying={isPlaying} setSongs={setSongs} libraryStatus={libraryStatus} />
       <audio
